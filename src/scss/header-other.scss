@@ -1,0 +1,125 @@
+.header__top-shop {
+	display: flex;
+	justify-content: space-between;
+	padding: 4px 25px 0px 25px;
+	align-items: center;
+	
+}
+.logo {
+    display: flex;    	
+}
+.logo-brand-others {
+    height: 100px;
+	max-width: 280px;
+	margin-top: 20px;
+}
+.header__menu {
+	// flex: 1 1 50%;
+    justify-content: center;	
+}
+.menu__list {
+	padding: 10px 10px;
+	display: flex;    
+	justify-content: center;
+
+}
+.menu__item {
+	margin: 0px 18px 0px 18px;	
+}
+
+.menu__link-others {
+	font-family: 'ProximaNova Light';
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing: .17em;
+	color: rgba(0,0,0,.4);
+	background-color: transparent;
+	line-height: 1em;
+	white-space: nowrap;
+    transition: 0.5s ease 0s;
+	&:hover {
+        color: #222;
+        
+        			
+}
+}
+.cart__link-others {
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing: .17em;
+	color: rgba(0,0,0,.4);
+	background-color: transparent;
+	&:hover {
+        color: #222;
+	}
+}	
+@media (max-width: 991.98px) {
+	.logo-brand-others {
+		width: 100%;
+    	height: auto;
+		margin-top: 0px;		
+	}
+	.header__top-shop {
+		padding: 19px 5px 0px 5px;	
+	}
+	.menu__list {
+		padding: 10px 0px;
+		width: auto;
+	
+	}
+}
+@media (max-width: 767.98px) {
+	.header__top-shop {
+		display: block;
+		flex-direction: column;
+		align-items: stretch;
+		padding: 15px 10px 0px 10px;
+		text-align: center;
+	}
+	.menu__link-others {
+		padding: 0px 0px 25px 0px;
+		display: inline-block;	
+	}
+	.logo-brand-others {
+		width: 80%;
+    	height: auto;
+		margin-top: 0px;		
+	}
+	.logo {
+		margin-bottom: 20px;
+	}
+	.shop__content {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 10px 10px;
+	}
+	.img_shop {
+		width: 100%;
+		height: 350px;
+		
+	}
+	
+}
+@media (max-width: 460.98px) {
+	.logo-brand-others {
+		width: 60%;
+    	height: auto;
+	}
+	.img_shop {
+		width: 100%;
+		height: 200px;
+		
+	}
+	.foto-name {
+		font-size: .9rem;
+	}
+	.price {
+		font-size: .8rem;
+	}
+}
+
+
+
+
+

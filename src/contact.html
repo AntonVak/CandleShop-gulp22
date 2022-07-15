@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+@@include('html/head.html', {
+    "title": 'contact'
+})
+<body>
+    @@include('html/header-other.html', {})
+    <main class="main__story">
+        <div class="contact__container">
+            <div class="form">
+                
+                <div class="title__care contact-title">Contact us</div>
+                <form action="#" id="form" class="form__body" method="POST" enctype="multipart/form-data">
+                    <div class="form__item">
+                        <label for="formName" class="form__label" required>Name *</label>
+                        <input id="formName" type="text" class="form__input" data-validate-field="name" name="usname" required >
+                        
+                    </div>
+                    <div class="form__item">
+                        <label for="formEmail" class="form__label" required>E-mail *</label>
+                        <input id="formEmail" type="mail" class="form__input" data-validate-field="email" name="Email" required>
+                    </div>
+                    <div class="form__item">
+                        <label for="formSubject" class="form__label" required>Subject *</label>
+                        <input id="formSubject" type="text" class="form__input" name="subject">
+                    </div>
+                    <div class="form__item">
+                        <label for="formMessage" class="form__label">Message</label>
+                        <textarea name="message" id="formMessage" class="form__input"></textarea>
+                    </div>
+                    <button class="form__button" type="submit">submit</button>
+                </form>
+
+                
+            </div>
+            <div class="foto__contact">
+                <img src="@img/ourstory.jpg" alt="foto care">
+            </div>
+        </div>
+
+    
+    </main>
+    @@include('html/footer.html', {})
+    
+    <script src="js/app.min.js"></script>
+    <!-- <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script> -->
+    <script src="js/just-validate.production.min.js"></script>
+    <script src="js/contactform.js"></script>
+</body>
+</html>
